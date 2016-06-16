@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/aliasfalse/warframe-forum-dark.png?label=ready&title=Ready)](https://waffle.io/aliasfalse/warframe-forum-dark)
 # warframe-forum-dark
 
 ## Installation
