@@ -1,5 +1,6 @@
-[![Stories in Ready](https://badge.waffle.io/aliasfalse/warframe-forum-dark.png?label=ready&title=Ready)](https://waffle.io/aliasfalse/warframe-forum-dark)
 # warframe-forum-dark
+
+[![Supported by Warframe Community Developers](https://github.com/Warframe-Community-Developers/banner/blob/master/banner.png)](https://github.com/Warframe-Community-Developers)
 
 ## Installation
 
@@ -10,3 +11,5 @@
 1. Add a title and save (if you pasted the whole CSS)
 
 Enjoy.
+
+[![Stories in Ready](https://badge.waffle.io/aliasfalse/warframe-forum-dark.png?label=ready&title=Ready)](https://waffle.io/aliasfalse/warframe-forum-dark)
