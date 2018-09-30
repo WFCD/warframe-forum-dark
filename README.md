@@ -4,7 +4,7 @@
 
 ## Installation
 
-1. Install the [Stylish](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) extension for Chrome
+1. Install the [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en) extension for Chrome
 1. Open up extension options and paste the whole [CSS](https://raw.githubusercontent.com/aliasfalse/warframe-forum-dark/master/warframe-forum-dark.css)
 1.    Or add the theme from [userstyles.org](https://userstyles.org/styles/127678/warframe-forums-dark-reskin)
 1. Specify the domain name to be `forums.warframe.com` (if you pasted the whole CSS)
