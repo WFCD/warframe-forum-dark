@@ -1,6 +1,6 @@
 @-moz-document domain("forums.warframe.com") {
 body.ipsApp {
-    background: #060606 url(http://i.imgur.com/DVYYiuX.png) no-repeat fixed center top;
+    background: #23272A url(http://i.imgur.com/DVYYiuX.png) no-repeat fixed center top;
 }
 div.site_limiter a img {
     content: url("http://i.imgur.com/2KQpMPi.png");
@@ -30,7 +30,7 @@ div#top-links {
     margin-bottom: 8px;
     padding-bottom: 15px!important;
     height: 121px!important;
-    border-color: rgba(255, 255, 255, 0.3);
+    border-color: transparent;
 }
 #top-links a,
 .ipsQuote .ipsQuote_citation a,
@@ -39,14 +39,14 @@ div#top-links {
 .ipsApp .ipsButtonBar .ipsPagination .ipsPagination_prev a,
 .ipsApp .ipsButtonBar .ipsPagination .ipsPagination_first a,
 .ipsApp .ipsButtonBar .ipsPagination .ipsPagination_last a,
-.ipsType_pageTitle span {
+.ipsType_pageTitle span, a, .ipsApp .navmenu li a, #elUserNav > li > a:not( #elRegisterButton ) {
     color: red;
 }
 .ipsApp .ipsButtonBar .ipsPagination .ipsPagination_page a,
 .ipsApp .ipsButtonBar .ipsPagination .ipsPagination_next a,
 .ipsApp .ipsButtonBar .ipsPagination .ipsPagination_prev a,
 .ipsApp .ipsButtonBar .ipsPagination .ipsPagination_first a,
-.ipsApp .ipsButtonBar .ipsPagination .ipsPagination_last a {
+.ipsApp .ipsButtonBar .ipsPagination .ipsPagination_last a, .ipsUserPhoto {
     background: transparent;
 }
 .ipsButtonBar .ipsPagination .ipsPagination_page.ipsPagination_active a,
@@ -91,9 +91,7 @@ h1.type-title {
 #social {
     background-color: transparent!important;
 }
-.ipsAreaBackground_light.ipsPad, div p a {
-    background: transparent!important;
-}
+
 #tennocon-button > a > img {
     content: url(http://i.imgur.com/GxMsipi.png);
 }
@@ -155,6 +153,7 @@ html[dir="ltr"] .ipsCommentCount:after {
 .ipsReputation_count.ipsType_positive,
 .ipsApp .ipsButton_light {
     background: rgba(31, 31, 31, 0.5);
+	color: white;
 }
 .cPost.ipsBox.ipsComment.ipsComment_parent.ipsClearfix.ipsClear.ipsColumns.ipsColumns_noSpacing.ipsColumns_collapsePhone {
     border-color: rgba(31, 31, 31, 0.8);
@@ -175,9 +174,11 @@ li.ipsDataItem,
     color: white;
 }
 
+p a span {color: red!important;}
+
 li.ipsDataItem, .ipsAreaBackground_reset, p span, .cRatingColumn, div.ipsDataItem_meta.ipsType_break.is-truncated, .ipsComment, .ipsComment.ipsBox, .ipsPad, article section >*, .ipsType_normal.ipsType_richText.ipsContained >* {
-	background-color: transparent!important;
-    background:transparent!important;
+	background-color: rgba(31, 31, 31, 0.8);
+    background:rgba(31, 31, 31, 0.8);
     color: white!important;
 }
 
@@ -197,9 +198,8 @@ li.ipsDataItem, .ipsAreaBackground_reset, p span, .cRatingColumn, div.ipsDataIte
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(51, 51, 51, 0.8)), color-stop(100%, rgba(51,51,51, 0.8)));
 }
 
-.ipsMenu:not( .ipsMenu_noStem):after,
-.ipsMenu:not( .ipsMenu_noStem):before {
-    border-bottom-color: rgba(31, 31, 31, 0.8)!important;
+.ipsMenu.ipsMenu_topCenter:before, .ipsMenu.ipsMenu_topCenter:after {
+	border-color: #23272A transparent transparent transparent;
 }
 
 .ipsComment_content .cPost_contentWrap.ipsPad table,
@@ -211,9 +211,9 @@ div.ipsType_richText.ipsType_small tbody,
 div.ipsType_richText.ipsType_small tr,
 div.ipsType_richText.ipsType_small td
 {
-    background-color: rgba(31, 31, 31, 0.8)!important;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(31, 31, 31, 0.8)), color-stop(100%, rgba(31, 31, 31, 0.8)));
-    border: solid rgba(255, 255, 255, 0.2) 1.0pt!important;
+    background-color: #23272A;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #23272A), color-stop(100%, #23272A));
+    border: solid #2C2F33 1.0pt!important;
 }
 .ipsType_richText.ipsType_small,
 .ipsTabs_panel,
@@ -230,17 +230,17 @@ div.ipsType_richText.ipsType_small td
     border-color: rgba(31, 31, 31, 0.5)!important;
 }
 .ipsEmbedded_headerArea, #elSearch #elSearchFilter, #elSearchFilter_menu, .ipsDialog_content, .ipsDialog > div, .ipsFieldRow_section, .ipsApp select:not( [multiple] ) {
-    background-color: rgba(31, 31, 31, 0.8)!important;
+    background-color: rgba(31, 31, 31, 0.8);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(31, 31, 31, 0.8)), color-stop(100%, rgba(31, 31, 31, 0.8)));
     color: white;
 }
 .ipsTabs_activeItem, .ipsTabs_activeItem:hover {
-    background-color: rgba(51, 51, 51, 0.8)!important;
+    background-color: rgba(51, 51, 51, 0.8);
     color: white;
 }
 .ipsHovercard {
-    background-color: rgba(51, 51, 51, 0.8)!important;
-    border-color: rgba(51, 51, 51, 0.8)!important;
+    background-color: rgba(51, 51, 51, 0.8);
+    border-color: rgba(51, 51, 51, 0.8);
 }
 .ipsHovercard:before, .ipsHovercard_stemBottom .ipsHovercard_stem {
 	border-color: transparent transparent rgba(51, 51, 51, 0.8) transparent;
@@ -250,7 +250,7 @@ div.ipsType_richText.ipsType_small td
 	color: rgba(255,255,255,0.9)!important;
 }
 
-#elSearch input[type="search"] {color: rgba(51, 51, 51, 0.8)!important;}
+#elSearch input[type="search"] {color: #99AAB5;}
 
 .ipsSpoiler_header.ipsSpoiler_closed [data-action='toggleSpoiler']:before {
     color: red;
@@ -259,6 +259,20 @@ div.ipsType_richText.ipsType_small td
 b span, strong span{
 	font-weight: bold!important;
     color: white!important;
+}
+
+li.ipsWidget.ipsWidget_vertical.ipsBox:not(:first-child) {
+    display: none;
+}
+
+.cForumTitle, .ipsType_sectionTitle {
+    height: 28px;
+    padding-top: 7px;
+}
+
+.ipsType_sectionTitle a {
+    margin-top: -2px;
+    margin-right: -12px;
 }
 
 .ipsMenu_title, .ipsDialog_title, .ipsItemStatus.ipsItemStatus_large {
@@ -271,14 +285,15 @@ b span, strong span{
 	background: rgba(255,255,255,0)!important;
 }
 .cke_wysiwyg_frame, .cke_wysiwyg_div {
-    background-color: rgba(51, 51, 51, 0.8)!important;
-    border-color: rgba(51, 51, 51, 0.8)!important;
-    color: rgba(255,255,255,0.9)!important;
+    background-color: rgba(51, 51, 51, 0.8);
+    border-color: rgba(51, 51, 51, 0.8);
+    color: rgba(255,255,255,0.9);
 }
 
 .ipsApp .ipsField_autocomplete, .ipsApp textarea, .ipsApp input[type="text"], .ipsApp input[type="password"], .ipsApp input[type="datetime"], .ipsApp input[type="datetime-local"], .ipsApp input[type="date"], .ipsApp input[type="month"], .ipsApp input[type="time"], .ipsApp input[type="week"], .ipsApp input[type="number"], .ipsApp input[type="email"], .ipsApp input[type="url"], .ipsApp input[type="search"], .ipsApp input[type="tel"], .cke_inner
 {
-	background-color: transparent!important;
+	background-color: transparent;
+	color: #99AAB5;
 }
 
 a.cke_button_on, a.cke_button_off:hover, a.cke_button_off:focus, a.cke_button_off:active, a.cke_button_disabled:hover, a.cke_button_disabled:focus, a.cke_button_disabled:active {
@@ -288,5 +303,38 @@ a.cke_button_on, a.cke_button_off:hover, a.cke_button_off:focus, a.cke_button_of
 .cke_toolbar .cke_button_icon {
 	filter: invert(100%)!important;
     -webkit-filter: invert(100%)!important;
+}
+
+.ipsMemberCard {
+	background: inherit;
+	border: 1px solid #2e2e2e
+}
+
+#elSearchWrapper .cSearchSubmit {
+	color: #99AAB5;
+}
+
+.ipsAutocompleteMenu, #elSearchExpanded, #elSearchExpanded .ipsMenu_title, html[dir="ltr"] .ipsSideMenu_withChecks .ipsSideMenu_item a, html[dir="ltr"] .ipsSideMenu_withChecks a.ipsSideMenu_item, html[dir="ltr"] .ipsSideMenu_withChecks span.ipsSideMenu_item, html[dir="ltr"] .ipsSideMenu_withRadios .ipsSideMenu_item a, html[dir="ltr"] .ipsSideMenu_withRadios a.ipsSideMenu_item, html[dir="ltr"] .ipsSideMenu_withRadios span.ipsSideMenu_item, #elSearchExpanded .ipsSideMenu_list, #elSearch {
+	background: #23272A;
+	box-shadow: 0px 2px 10px #2c2f33cc;
+	border: 1px solid #2c2f33;
+}
+
+.ipsAutocompleteMenu_item[data-selected], .ipsSideMenu_itemActive a, a.ipsSideMenu_itemActive, span.ipsSideMenu_itemActive, .ipsSideMenu_withChecks .ipsSideMenu_item > input[type="checkbox"]:checked ~ a, .ipsSideMenu_withChecks .ipsSideMenu_item > input[type="checkbox"]:checked ~ span, .ipsSideMenu_withRadios .ipsSideMenu_item > input[type="radio"]:checked ~ a, .ipsSideMenu_withRadios .ipsSideMenu_item > input[type="radio"]:checked ~ span {
+	background: #2C2F33;
+}
+
+ul:not( .ipsMenu_keyNav ) .ipsMenu_item:not( .ipsMenu_itemClicked ):not( .ipsMenu_itemDisabled ) a:not( .ipsMenu_itemInline ):hover,
+.ipsMenu_item[data-selected] a, .ipsMenu_item[data-selected] span, .ipsMenu_item.ipsMenu_hover {
+	background: #2C2F33;
+}
+
+.ipsImage_thumbnailed {
+	border: none;
+}
+
+.cProfileHeader_name {
+    background-color: transparent;
+    background: transparent;
 }
 }
